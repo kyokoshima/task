@@ -1,0 +1,200 @@
+/*@import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter';
+@import 'https://fonts.googleapis.com/css?family=Rock+Salt';
+*//*ここはリセット用*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+/*ここから下は
+本番用*/
+
+body {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+background: rgb(240,249,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%, rgba(203,235,255,1) 47%, rgba(161,219,255,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:visited {
+	color: #333;
+}
+
+a:active {
+	color: purple;
+}
+
+a:focus {
+	border: 1px solid red;
+}
+
+header {
+	margin-bottom: 30px;
+	padding: 20px 10px;
+	box-shadow: 0 1px 2px gray;
+	background-image: url('images/ocean.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+}
+
+header h1 {
+	text-shadow: 2px 2px #174e9e;
+	margin-bottom: 10px;
+}
+
+header p {
+	font-size: smaller;
+	margin-bottom: 12px;
+}
+header, footer{
+	color: #fff;
+}
+
+article {
+	background-color: #b0d7f4;
+	box-shadow: 1px 1px 3px gray;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+article > figure {
+	width: 30%;
+	float: left;
+}
+
+article > figure > img {
+	max-width: 100%;
+}
+
+article > .content {
+	width: 60%;
+	float: left;
+	margin-left: 20px;
+}
+
+article > .content > h2 {
+	margin-bottom: 10px;
+}
+
+div {
+	width: 75%;
+	margin: 0 auto;
+}
+
+ul.nav {
+	overflow: hidden;
+	font-size: 0;
+	text-align: right;
+}
+ul.nav li {
+	display: inline;
+	/*float: left;*/
+	border-right: 1px solid #333;
+	font-size: 10pt;
+	padding: 0 5px;
+}
+
+ul.nav li > a {
+	color: #0068b7;
+}
+
+ul.nav > .first {
+	border-left: 1px solid #333;
+}
+
+table {
+	/*border: 1px solid gray;*/
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table tbody td, table tbody th {
+	border-bottom: 1px solid gray;
+	padding: 10px;
+}
+
+table tr {
+	padding: 3px;
+}
+
+table tbody > tr > td:first-child {
+	width: 25%;
+}
+
+table tbody > tr:nth-child(odd) {
+	background-color: #9fd9f6;
+}
+
+table tbody > tr:nth-child(even) {
+	background-color: #66cccc;
+}
+
+.form-group {
+	margin-bottom: 12px;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+}
+
+.form-group label {
+	width: 40%;
+	float: left;
+	text-align: right;
+	line-height: 2em;
+}
+.form-group .form-control {
+	width: 50%;
+	float: left;
+	margin-left: 2%;
+}
+
+.form-group .form-control input[type=text]{
+	width: 100%;
+	height: 2em;
+	padding-left: 1em;
+	border-radius: 2px;
+}
+
+.form-group .form-control textarea {
+	width: 100%;
+	height: 30vh;
+	padding: 1em;
+}
+
+.form-group .form-control input[type=radio],
+.form-group .form-control input[type=checkbox]
+ {
+	margin: 0 5px;
+}
+
+footer {
+	padding: 20px 10px;
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+

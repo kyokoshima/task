@@ -7,3 +7,37 @@ Description: サンプルのテーマ
 Version: 1.0
 Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
+
+
+#sidebar {
+	float: right;
+	width: 30%;
+	background-color: green;
+}
+
+#contents {
+	float: left;
+	width: 60%;
+}
+
+#wrapper {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+article.post {
+	background-color: #ddd;
+	border-radius: 5px;
+	padding: 12px;
+	margin-bottom: 24px;
+}
+article.post h2 {
+	margin: 0;
+	padding-left: 10px;
+	border-left: 10px solid #aaa;
+}
+
+article.post h2 a {
+	text-decoration: none;
+	color: #1d1d1d;
+}
