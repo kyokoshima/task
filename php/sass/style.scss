@@ -1,0 +1,35 @@
+$width: 80%;
+$height: 24px;
+$margin: 32px;
+$color: #00ff00;
+nav #navbar {
+	width: $width;
+	height: $height;
+	ul {
+		list-style-type: none;
+		li {
+			margin: $margin / 2;
+			height: $height;
+			a {
+				color: $color;
+			}
+		}
+	}
+}
+@mixin table-base {
+	th {
+		text-align: center;
+		&:first-child {
+			background-color: $color;
+		}
+	}
+	td {
+		text-align: left;
+	}
+}
+
+#data { @include table-base;}
+#data2 { @include table-base; }
+#data3 { @include table-base; }
+#data4 { @include table-base; }
+#data5 { @include table-base; }

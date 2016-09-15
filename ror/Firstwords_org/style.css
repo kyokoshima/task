@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; text-decoration: none; font-family: 'Open Sans condensed' , '游ゴシック';}
+
+body{
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo{
+  width: 60px;
+  height: auto;
+  margin: 10px;
+/*  position: fixed;*/
+  margin-top: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 500;
+  opacity: 0.8;
+  float: left;
+}
+
+.logo:hover{
+  opacity: 1.0;
+}
+
+.guide{
+  display: none;
+}
+
+.arrow{
+/*  z-index: 500;*/
+  float: left;
+  margin-top: 10px;
+  height: 60px;
+  width: auto;
+}
+
+.guide p{
+  color: white;
+  display: block;
+  float: left;
+  margin-top: 80px;
+/*  font-family: "Chalkboard";*/
+  font-weight: lighter;
+  background-color: black;
+}
+
+
+/*----------------------------------*/
+/*---------------menu---------------*/
+/*----------------------------------*/
+.menu{
+
+  z-index: 120;
+  cursor: pointer;
+  position: fixed;
+  right: -160px;
+  background:white;
+  width: 180px;
+  color: black;
+  font-size: 16px;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+
+  border-left: 5px solid black;
+}
+
+.fb-like, iframe{
+  padding-top: 200px;
+  padding-left: 10px;
+  width: 120px;
+
+}
+
+.twitter-share-button{
+  padding-top: 0px;
+  padding-left: 35px;
+}
+
+
+
+.menu > a{
+  position: relative;
+  cursor: pointer;
+  left: 0;
+}
+
+.open{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.top-btn, .about-btn{
+  line-height: 50px;
+  position: relative;
+  display: inline-block;
+  font-family: "Helvetica";
+  color: black;
+    margin-top: 0px;
+}
+
+  .top-btn > a{
+   padding: 0 75px;
+  }
+
+  .about-btn{
+    padding:0  60px;
+  }
+
+  .top-btn::after, .about-btn::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 6px double white;
+    padding-bottom: 2px;
+    -webkit-transform:scaleX(0);
+    -ms-transform:scaleX(0);
+    transform: scaleX(0);
+    background-color: black;
+    -webkit-transition:all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .top-btn:hover::after, .about-btn:hover::after{
+    -webkit-transform:scaleX(1);
+    -ms-transform:scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+  .original, .copyright{
+  font-size: 5px;
+  color: #444444;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  padding: 20px 36.5px;
+
+}
+
+  .original a{
+    color: #444444;
+  }
+
+  .copyright{
+  font-size: 5px;
+  color: #444444;
+  bottom: 20px;
+  }
+
+
+/*-------------about-------------*/
+.about{
+  width: 75%;
+  height: 75%;
+  background-color: white;
+  text-align: left;
+  margin: auto;
+  margin-top: 50px;
+  display:none;
+  z-index: 100;
+  opacity: 1.0;
+  font-size: 12px;
+  position: relative;
+  padding: 15px;
+  line-height: 25px;
+  color: #444444;
+  font-family: '游ゴシック';
+  letter-spacing: 1px;
+}
+
+  .about > p > span a{
+    color: gray;
+  }
+
+  .about > p > span > a:hover{
+    color: #3C96CD;
+  }
+
+  .about .creator{
+    letter-spacing: 2px;
+  }
+
+  .about .creator > a{
+    color: #444444;
+  }
+
+.title{
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 5px double black;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.emphasize{
+    border-bottom: 5px double black;
+    padding-bottom: 3px;
+    font-size: 15px;
+    color: black;
+}
+
+
+
+.eng-about{
+  display: none;
+}
+
+.switch{
+  color: white;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  font-size: 15px;
+  background-color: black;
+  padding: 5px;
+}
+
+.switch > p{
+  float: left;
+}
+
+.english:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.japanese:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/*-----------------main----------------*/
+
+main{
+  clear: both;
+  margin-top: 45px;
+  overflow: hidden;
+  font: 300 30px/1 'Open Sans condensed' , sans-serif;
+  text-transform: uppercase;
+  animation: 60s credits linear infinite;
+}
+
+
+.words{
+  text-align: center;
+  padding: 10px auto;
+  margin: 30px auto;
+  color: white;
+  width: auto;
+  width: 70%;
+  letter-spacing: 3px;
+  line-height: 30px;
+  font-size: 18px;
+  z-index: -1;
+  opacity: 0.5;
+   }
+
+  .words:hover{
+    opacity: 1.0;
+    cursor: pointer;
+    font-size: 19px;
+  }
+
+.arrow_box{
+  position: relative;
+}
+
+.contents{
+  position: absolute;
+  text-align: center;
+}
+
+body{
+  position: relative;
+}
+
+.box{
+  width: 320px;
+  height:180px;
+  background-color: gray;
+  margin: auto;
+}
+
+.detail-1, .detail-2, .detail-3, .detail-4, .detail-5, .detail-6,.detail-7,.detail-8,.detail-9,.detail-10,.detail-11,.detail-12,.detail-13,.detail-14,.detail-15,.detail-16,.detail-17,.detail-18,.detail-19,.detail-20,.detail-21,.detail-22,.detail-23,.detail-24,.detail-25,.detail-26,.detail-27,.detail-28,.detail-29,.detail-30,.detail-31,.detail-32,.detail-33,.detail-34,.detail-35,.detail-36,.detail-37,.detail-38,.detail-39,.detail-40,.detail-41,.detail-42,.detail-43,.detail-44,.detail-45,.detail-46,.detail-47,.detail-48,.detail-49,.detail-50,.detail-51,.detail-52,.detail-53,.detail-54,.detail-55,.detail-56,.detail-57,.detail-58,.detail-59,.detail-60,.detail-61,.detail-62,.detail-63,.detail-64,.detail-65,.detail-66,.detail-67,.detail-68,.detail-69,.detail-70,.detail-71,.detail-72,.detail-73,.detail-74,.detail-75,.detail-76,.detail-77,.detail-78,.detail-79, .detail-80, .detail-81, .detail-82, .detail-83, .detail-84, .detail-85, .detail-86, .detail-87, .detail-88, .detail-89, .detail-90, .detail-91, .detail-92, .detail-93, .detail-94, .detail-95, .detail-96, .detail-97, .detail-98, .detail-99, .detail-100{
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /*中央に配置*/
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  text-align: center;
+/*  border: 10px double black;*/
+}
+
+
+
+.no_image{
+  margin-top: 20px;
+  padding:  10px auto;
+  height: auto;
+  width: 100px;
+  border: 10px double black;
+}
+
+h1{
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding: 10px;
+  line-height: 18px;
+}
+
+.explain{
+  padding-top: 10x;
+}
+
+h2{
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+h3{
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.film, .person{
+  width: 15px;
+  height: auto;
+  padding-right: 10px;
+}
+
+
+
+/*サイズ感がうまくいかなかったやつだけ調節*/
+.detail-2 > h1{
+  font-size: 13px;
+}
+
+.detail-8 > h1, .detail-37 > h1, .detail-39 > h1, .detail-56 > h1, .detail-76 > h1, {
+  font-size: 10px;
+}
+
+.detail-87 > h1{
+  font-size: 5px;
+}
+
+.detail-87 > h2, .detail-87 > h3{
+  font-size: 5px;
+}
+
+.detail-8 > h2{
+  padding-top: 0px;
+}
+
+
+.detail-8 > h2, .detail-8 > h3{
+  font-size: 8px;
+}
+
+.thankyou{
+  color: white;
+}
+
+
+
+
+
+
+/* ------------パソコン画面----------------*/
+@media screen and (min-width: 640px){
+.no_image{
+/*  padding: 50px 200px;*/
+  margin: 50px 200px;
+}
+
+h1{
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 10px;
+  line-height: 25px;
+}
+
+.explain{
+  padding-top: 10x;
+}
+
+h2{
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 40px;
+}
+
+h3{
+  font-size:15px;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
+.switch{
+  top: -65px;
+}
+
+.about{
+  font-size: 18px;
+  line-height: 35px;
+  padding: 20px;
+  font-weight: lighter;
+  letter-spacing: 0;
+}
+
+ .about .title{
+  font-size: 50px;
+  border-bottom: 10px double black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+ }
+
+  .about .emphasize{
+    font-size: 30px;
+    border-bottom: 8px double black;
+  }
+
+.detail-2 > h1{
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.detail-8 > h1 , .detail-37 > h1, .detail-39 > h1, .detail-56 > h1 ,.detail-87 > h1, .detail-90 > h1, .detail-91 > h1{
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.detail-20 > h1, .detail-24 > h1, .detail-25 > h1, .detail-30 > h1, .detail-52 > h1, .detail-76 > h1, .detail-80 > h1, .detail-86 > h1{
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.film, .person{
+  width: 20px;
+  height: auto;
+  padding-right: 10px;
+
+}
+
+}

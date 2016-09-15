@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  リンク名:<input type="text" id="name">URL: <input type="text" id="url">
+  <button type="button" id="add">リンク追加</button>
+  <div id="box"></div>
+  <script>
+    document.getElementById('add').addEventListener('click', function(){
+      var name = document.getElementById('name').value;
+      var url = document.getElementById('url').value;
+
+      if (name && url) {
+        var a = document.createElement('a');
+        a.innerHTML = name;
+        a.setAttribute('href', url);
+        document.getElementById('box').appendChild(a);
+      }
+    });
+  </script>
+</body>
+</html>

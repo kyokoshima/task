@@ -1,0 +1,47 @@
+nav #navbar {
+  width: 80%;
+  height: 24px; }
+  nav #navbar ul {
+    list-style-type: none; }
+    nav #navbar ul li {
+      margin: 16px;
+      height: 24px; }
+      nav #navbar ul li a {
+        color: #00ff00; }
+
+#data th {
+  text-align: center; }
+  #data th:first-child {
+    background-color: #00ff00; }
+#data td {
+  text-align: left; }
+
+#data2 th {
+  text-align: center; }
+  #data2 th:first-child {
+    background-color: #00ff00; }
+#data2 td {
+  text-align: left; }
+
+#data3 th {
+  text-align: center; }
+  #data3 th:first-child {
+    background-color: #00ff00; }
+#data3 td {
+  text-align: left; }
+
+#data4 th {
+  text-align: center; }
+  #data4 th:first-child {
+    background-color: #00ff00; }
+#data4 td {
+  text-align: left; }
+
+#data5 th {
+  text-align: center; }
+  #data5 th:first-child {
+    background-color: #00ff00; }
+#data5 td {
+  text-align: left; }
+
+/*# sourceMappingURL=style.css.map */

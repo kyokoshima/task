@@ -1,0 +1,20 @@
+<?php get_header(); ?>
+	<div id="contents">
+		<?php if (have_posts()) : ?>
+			<?php while(have_posts()) : ?>
+				<article class="post">
+					<?php the_post(); ?>
+					<h2 class-"post-title">
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					</h2>
+					<p><span>投稿日時:</span><span><?php echo get_the_date(); ?></span></p>
+					<p><span>カテゴリ:</span><span><?php the_category(','); ?></span></p>
+					<p><span>タグ:</span><span><?php the_tags(); ?></span></p>
+					
+					<?php the_post_thumbnail(); ?>
+					<p><?php the_content(); ?></p>
+				</article>
+			<?php endwhile; ?>
+		<?php endif; ?>
+	</div>
+<?php get_footer(); ?>
